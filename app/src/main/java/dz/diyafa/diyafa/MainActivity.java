@@ -3,12 +3,10 @@ package dz.diyafa.diyafa;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,10 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("users");
-        myRef.setValue("null");
 
 
 
@@ -40,5 +34,10 @@ public class MainActivity extends AppCompatActivity {
 //                Log.w("main", "Failed to read value.", error.toException());
 //            }
 //        });
+    }
+
+    public void onLogIn(View view) {
+
+
     }
 }
