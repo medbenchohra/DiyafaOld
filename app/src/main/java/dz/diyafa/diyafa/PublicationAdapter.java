@@ -8,4 +8,6 @@ import java.util.ArrayList;
 
 public class PublicationAdapter extends ArrayAdapter<Publication> {
 
+
+
 }
