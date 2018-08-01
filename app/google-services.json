@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "149596886478-rd0s05uvkmjc2kitrvlmi1e06aruk07t.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "dz.diyafa.diyafa",
-            "certificate_hash": "5471d831dcc6e12aa2795db76348f8babe3e19dd"
-          }
-        },
-        {
           "client_id": "149596886478-foojnvsp4dp5afomtiak3in5hi7rfccg.apps.googleusercontent.com",
           "client_type": 3
         }
