@@ -1,5 +1,6 @@
 package dz.diyafa.diyafa;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         EditText userName = findViewById(R.id.user_name);
         EditText password = findViewById(R.id.password);
         User user =new User(userName.getText().toString(),password.getText().toString());
-
+        Intent intent=new Intent(MainActivity.this,HomeActivity.class);
+        startActivity(intent);
 
 
 
