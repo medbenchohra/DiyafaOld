@@ -24,11 +24,11 @@ public class PostGiveAdapter extends ArrayAdapter<PostGive> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_post_give, parent, false);
         }
         // Lookup view for data population
-        TextView foodName = (TextView) convertView.findViewById(R.id.food_name);
-        TextView country = (TextView) convertView.findViewById(R.id.country);
-        TextView region=(TextView) convertView.findViewById(R.id.region);
-        TextView time = (TextView) convertView.findViewById(R.id.time);
-        TextView quantity= (TextView) convertView.findViewById(R.id.quantity);
+        TextView foodName = convertView.findViewById(R.id.food_name);
+        TextView country = convertView.findViewById(R.id.country2);
+        TextView region=convertView.findViewById(R.id.region);
+        TextView time = convertView.findViewById(R.id.time2);
+        TextView quantity= convertView.findViewById(R.id.quantity2);
 
         // Populate the data into the template view using the data object
         foodName.setText(PostGive.getFoodName());

@@ -10,13 +10,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
-
+    public static ArrayList<PostGive> arrayOfPostGives = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         // Construct the data source
-        ArrayList<PostGive> arrayOfPostGives = new ArrayList<>();
+
         PostGive p=new PostGive("Chorba", "Algeria","Algiers", "15min", "3people");
         arrayOfPostGives.add(p);
         p=new PostGive("Egyptian food", "Egypt","Cairo", "15min", "2people");
@@ -40,16 +40,17 @@ public class HomeActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         //Create the listener
-        AdapterView.OnItemClickListener itemClickListener =
-                new AdapterView.OnItemClickListener(){
+        AdapterView.OnItemClickListener itemClickListener =new AdapterView.OnItemClickListener(){
 
+                    @Override
                     public void onItemClick(AdapterView<?> listDrinks,
                                             View itemView,
                                             int position,
                                             long id) {
-                        //Pass the drink the user clicks on to DrinkActivity
+
                         Intent intent = new Intent(HomeActivity.this, PostGiveActivity.class);
                         intent.putExtra(PostGiveActivity.EXTRA_POST_ID, (int) id);
+
                         startActivity(intent);
                     }
 
