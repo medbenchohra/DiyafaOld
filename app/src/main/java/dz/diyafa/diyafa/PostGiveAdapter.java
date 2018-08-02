@@ -25,10 +25,10 @@ public class PostGiveAdapter extends ArrayAdapter<PostGive> {
         }
         // Lookup view for data population
         TextView foodName = (TextView) convertView.findViewById(R.id.food_name);
-        TextView country = (TextView) convertView.findViewById(R.id.country);
+        TextView country = (TextView) convertView.findViewById(R.id.country2);
         TextView region=(TextView) convertView.findViewById(R.id.region);
-        TextView time = (TextView) convertView.findViewById(R.id.time);
-        TextView quantity= (TextView) convertView.findViewById(R.id.quantity);
+        TextView time = (TextView) convertView.findViewById(R.id.time2);
+        TextView quantity= (TextView) convertView.findViewById(R.id.quantity2);
 
         // Populate the data into the template view using the data object
         foodName.setText(PostGive.getFoodName());

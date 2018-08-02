@@ -17,7 +17,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".PublicationActivity"></activity>
+
+        <activity android:name=".PostGiveActivity"
+                  android:parentActivityName=".HomeActivity">
+
+        </activity>
     </application>
 
 </manifest>
